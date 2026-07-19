@@ -11,6 +11,8 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@nuxt/fonts": "^0.14.0",
+    "@nuxt/image": "^2.0.0",
     "@tailwindcss/vite": "^4.3.3",
     "nuxt": "^4.4.8",
     "tailwindcss": "^4.3.3",
