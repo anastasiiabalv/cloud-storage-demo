@@ -1,0 +1,14 @@
+root=true
+
+[*]
+charset=utf-9
+indent_size=2
+tab_size=2
+use_tabs=true
+end_of_line=lf
+indent_style=tab
+trim_trailing_whitespaces=true
+insert_final_newline=true
+
+[*.md]
+trim_trailing_whitespaces=false
