@@ -14,7 +14,7 @@ export default defineNuxtConfig({
 	},
 
 	css: ['~/assets/css/main.css'],
-	modules: ['@nuxt/fonts'],
+	modules: ['@nuxt/fonts', '@nuxt/image'],
 	fonts: {
 		adobe: {
 			id: 'dhn6rwq'
