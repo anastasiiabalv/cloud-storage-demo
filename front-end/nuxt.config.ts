@@ -13,7 +13,7 @@ export default defineNuxtConfig({
 		plugins: [tailwindcss()]
 	},
 
-	css: ['~/assets/css/main.css'],
+	css: ['@shared/main-shared.css'],
 	modules: ['@nuxt/fonts', '@nuxt/image'],
 	fonts: {
 		adobe: {
@@ -22,5 +22,13 @@ export default defineNuxtConfig({
 		families: [{name: 'Ariana Pro', provider: 'adobe'},
       {name:'All Round Gothic',provider:'adobe'}
     ]
-	}
+	},
+
+	extends:['@dashboard','@shared', '@landing'],
+	alias:{
+		'@shared':'./layers/shared',
+		'@dashboard':'./layers/dashboard',
+		'@landing':'./layers/landing'
+	},
+
 })
