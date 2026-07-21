@@ -1,5 +1,4 @@
-@import url('https://typekit.net');
-@import 'tailwindcss';
+@reference '../../../layers/shared/app/assets/css/main-shared.css';
 
 @property --nav-gradient-angle {
   syntax: '<angle>';
@@ -12,19 +11,6 @@
   initial-value: rgb(176, 185, 118);
   inherits: false;
 }
-
-@theme {
-  --color-lightblue: rgb(210, 229, 246);
-  --color-blue: rgb(182, 214, 242);
-  --color-darkblue: rgb(60, 93, 133);
-  --color-green: rgb(50, 64, 1);
-  --color-darkgreen: rgb(34, 44, 1);
-  --color-lightgreen: rgb(176, 185, 118);
-  --font-main: 'Ariana Pro', sans-serif;
-  --font-logo: 'All Round Gothic', sans-serif;
-}
-
-@custom-variant dark (&:where(.dark, .dark *));
 
 @utility navbar-button {
   @apply font-main font-normal text-xl border rounded-full px-4 py-3 border-transparent

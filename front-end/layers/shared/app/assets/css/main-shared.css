@@ -1,0 +1,15 @@
+@import url('https://typekit.net');
+@import 'tailwindcss';
+
+@theme {
+  --color-lightblue: rgb(210, 229, 246);
+  --color-blue: rgb(182, 214, 242);
+  --color-darkblue: rgb(60, 93, 133);
+  --color-green: rgb(50, 64, 1);
+  --color-darkgreen: rgb(34, 44, 1);
+  --color-lightgreen: rgb(176, 185, 118);
+  --font-main: 'Ariana Pro', sans-serif;
+  --font-logo: 'All Round Gothic', sans-serif;
+}
+
+@custom-variant dark (&:where(.dark, .dark *));

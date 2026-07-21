@@ -1,10 +1,6 @@
 <template>
   <div>
-    <LndNavBar/>
-
-    <main>
-      <slot />
-    </main>
+    
   </div>
 </template>
 
