@@ -1,14 +1,11 @@
 <template>
-  <div>
-    <main>
-      <slot/>
-    </main>
-  </div>
+	<div>
+		<main>
+			<slot />
+		</main>
+	</div>
 </template>
 
-<script lang="ts" setup>
+<script lang="ts" setup></script>
 
-</script>
-
-<style scoped>
-</style>
+<style scoped></style>

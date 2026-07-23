@@ -1,9 +1,9 @@
 {
-  "name":"@cloud/landing",
-  "private": true,
-  "scripts": {
-    "dev":"nuxt dev",
-    "build":"nuxt build"
-  },
-  "type": "module"
+	"name": "@cloud/landing",
+	"private": true,
+	"scripts": {
+		"dev": "nuxt dev",
+		"build": "nuxt build"
+	},
+	"type": "module"
 }

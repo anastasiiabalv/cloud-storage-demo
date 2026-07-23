@@ -4,15 +4,14 @@ import {defineConfig} from 'eslint/config'
 import eslintConfigPrettier from 'eslint-config-prettier'
 
 export default defineConfig([
-  {
-    "ignores":['.nuxt/','node_modules/','.output/']
-  },
+	{
+		ignores: ['.nuxt/', 'node_modules/', '.output/']
+	},
 	{
 		files: ['**/*.{js,mjs,cjs}'],
 		plugins: {js},
 		extends: ['js/recommended'],
 		languageOptions: {globals: globals.browser}
 	},
-  eslintConfigPrettier
-
+	eslintConfigPrettier
 ])

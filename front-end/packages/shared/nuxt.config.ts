@@ -1,3 +1,1 @@
-export default defineNuxtConfig({
-
-})
+export default defineNuxtConfig({})

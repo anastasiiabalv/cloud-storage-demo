@@ -1,14 +1,13 @@
 <template>
-  <div>
-    <NuxtLayout></NuxtLayout>
-  </div>
+	<div>
+		<NuxtLayout></NuxtLayout>
+	</div>
 </template>
 
 <script setup lang="ts">
 definePageMeta({
-  layout:'default'
+	layout: 'default'
 })
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>

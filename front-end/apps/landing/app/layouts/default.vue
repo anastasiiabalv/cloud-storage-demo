@@ -1,17 +1,13 @@
 <template>
-  <div>
-    <NavBar/>
+	<div>
+		<NavBar />
 
-    <main>
-      <slot />
-    </main>
-  </div>
+		<main>
+			<slot />
+		</main>
+	</div>
 </template>
 
-<script lang="ts" setup>
+<script lang="ts" setup></script>
 
-</script>
-
-<style scoped>
-
-</style>
+<style scoped></style>

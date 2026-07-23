@@ -8,9 +8,9 @@ export default defineNuxtConfig({
 
 	vite: {
 		plugins: [tailwindcss()],
-		resolve:{
-			alias:{
-				'@shared':fileURLToPath(new URL('./packages/shared', import.meta.url))
+		resolve: {
+			alias: {
+				'@shared': fileURLToPath(new URL('./packages/shared', import.meta.url))
 			}
 		}
 	},
@@ -20,11 +20,11 @@ export default defineNuxtConfig({
 		adobe: {
 			id: 'dhn6rwq'
 		},
-		families: [{name: 'Ariana Pro', provider: 'adobe'},
-      {name:'All Round Gothic',provider:'adobe'}
-    ]
+		families: [
+			{name: 'Ariana Pro', provider: 'adobe'},
+			{name: 'All Round Gothic', provider: 'adobe'}
+		]
 	},
 
-	extends:['./packages/shared']
-
+	extends: ['./packages/shared']
 })
