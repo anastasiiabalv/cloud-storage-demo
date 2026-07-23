@@ -1,14 +1,26 @@
 {
   "name": "cloud-storage-demo",
-  "author": "",
+  "author": {
+    "name": "Anastasiia Balieieva",
+    "email": "baleevaanastasiz@gmail.com"
+  },
   "type": "module",
   "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
   "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "dev:dashboard": "npm run dev --workspace=apps/dashboard",
+    "dev:landing": "npm run dev --workspace=apps/landing",
+    "dev": "concurrently \"npm:dev:dashboard\" \"npm:dev:landing\"",
+    "clean": "nuxi cleanup && npx nuxi cleanup apps/dashboard && npx nuxi cleanup apps/landing",
+    "build:dashboard": "npm run build --workspace=apps/dashboard",
+    "build:landing": "npm run build --workspace=apps/landing",
+    "build": "npm run build:dashboard && npm run build:landing",
+    "start:dashboard": "set PORT=7002 &&  node apps/dashboard/.output/server/index.mjs",
+    "start:landing": "set PORT=7001 && node apps/landing/.output/server/index.mjs",
+    "start": "concurrently \"npm run start:dashboard\"  \"npm run start:landing\""
   },
   "dependencies": {
     "@nuxt/fonts": "^0.14.0",
@@ -21,6 +33,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
+    "concurrently": "^10.0.3",
     "eslint": "^10.7.0",
     "eslint-config-prettier": "^10.1.8",
     "prettier": "^3.9.5",

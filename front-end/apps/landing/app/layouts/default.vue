@@ -1,6 +1,10 @@
 <template>
   <div>
-    
+    <NavBar/>
+
+    <main>
+      <slot />
+    </main>
   </div>
 </template>
 
@@ -9,6 +13,5 @@
 </script>
 
 <style scoped>
-@reference '../../../shared/main-shared.css'
-@import './../assets/css/main-dashboard.css'
+
 </style>

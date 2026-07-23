@@ -1,19 +1,20 @@
 import tailwindcss from '@tailwindcss/vite'
+import {fileURLToPath} from 'node:url'
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
 	compatibilityDate: '2025-07-15',
 	devtools: {enabled: true},
 
-	devServer: {
-		port: 29563
-	},
-
 	vite: {
-		plugins: [tailwindcss()]
+		plugins: [tailwindcss()],
+		resolve:{
+			alias:{
+				'@shared':fileURLToPath(new URL('./packages/shared', import.meta.url))
+			}
+		}
 	},
 
-	css: ['@shared/main-shared.css'],
 	modules: ['@nuxt/fonts', '@nuxt/image'],
 	fonts: {
 		adobe: {
@@ -24,11 +25,6 @@ export default defineNuxtConfig({
     ]
 	},
 
-	extends:['@dashboard','@shared', '@landing'],
-	alias:{
-		'@shared':'./layers/shared',
-		'@dashboard':'./layers/dashboard',
-		'@landing':'./layers/landing'
-	},
+	extends:['./packages/shared']
 
 })

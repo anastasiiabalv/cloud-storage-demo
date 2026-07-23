@@ -1,0 +1,9 @@
+{
+  "name":"@cloud/dashboard",
+  "private": true,
+  "scripts": {
+    "dev":"nuxt dev",
+    "build":"nuxt build"
+  },
+  "type": "module"
+}
