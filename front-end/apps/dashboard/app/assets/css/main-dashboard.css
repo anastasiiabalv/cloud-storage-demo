@@ -1,0 +1,8 @@
+@import '@shared/css/main.css';
+@source '../../*.{vue,js,ts,jsx,tsx,css}';
+
+/* component imports */
+
+/* ================= */
+
+@custom-variant dark (&:where(.dark, .dark *));

@@ -7,5 +7,5 @@
   "trailingComma": "none",
   "tabWidth": 2,
   "bracketSameLine":true,
-  "plugins": ["./front-end/node_modules/prettier-plugin-tailwindcss"]
+  "plugins": ["./front-end/node_modules/prettier-plugin-tailwindcss/dist/index.mjs"]
 }

@@ -1,0 +1,22 @@
+@property --nav-gradient-angle {
+	syntax: '<angle>';
+	initial-value: 0deg;
+	inherits: false;
+}
+
+@property --nav-gradient-color {
+	syntax: '<color>';
+	initial-value: rgb(176, 185, 118);
+	inherits: false;
+}
+
+@utility navbar-button {
+	@apply font-main rounded-full border border-transparent px-4 py-3 text-xl font-normal transition-all duration-500 ease-out hover:scale-103 hover:border-black hover:px-3 hover:py-2 hover:font-bold;
+}
+
+@utility navbar-transition-gradient {
+	transition:
+		--nav-gradient-angle 0.8s ease-out,
+		--nav-gradient-color 0.3s ease-out,
+		scale 0.3s ease-out;
+}
